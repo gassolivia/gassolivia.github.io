@@ -64,7 +64,7 @@ h1 {
 }
 
 h1::after {
-    border: 5px solid ##fafbfc;
+    border: 5px solid #fafbfc;
     border-radius: 50%;
     content: '';
     height: 15px;
