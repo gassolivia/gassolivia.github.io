@@ -113,6 +113,14 @@ article img {
     top: -1px;
 }
 
+.read-less::after {
+  content: '\25B2';
+  position: relative;
+  left: 7px;
+  font-size: 80%;
+  top: -1px;
+}
+
 
 /*** Sidebar Styling ***/
 aside {

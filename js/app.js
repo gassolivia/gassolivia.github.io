@@ -1,27 +1,8 @@
-/* https://cssdeck.com/blog/showhide-content-css-javascript/ */
-
-/*
-<a href="javascript:showMore()" id="link">Read more</a>
-<div id="more" style="display:none;">
-
-function showMore(){
-    //removes the link
-    document.getElementById('link').parentElement.removeChild(document.getElementById('link'));
-    //shows the #more
-    document.getElementById('more').style.display = "block";
-}
-*/
-/*
-<div><a href="javascript:showHide('div_1035677');">more...</a></div>
-<div id="div_1035677" style="display:none">
-
-function showHide(elementid){
-    if (document.getElementById(elementid).style.display == 'none'){
-        document.getElementById(elementid).style.display = '';
-    } else {
-        document.getElementById(elementid).style.display = 'none';
-    }
-}
+/* https://cssdeck.com/blog/showhide-content-css-javascript/ 
+It checks to see if it can find an element with an ID that matches the variable we passed it.
+If so, it checks to see if our “show” link is visible (this is where the ID naming convention starts to matter).
+If the “show” link is visible, that means our content is still hidden. The JavaScript then hides the link and displays our hidden content.
+If the “show” link is hidden, that means our extra content is currently visible. So it just reverses course, displaying our link again and hiding our extra content.
 */
 function showHide(shID) {
 	if (document.getElementById(shID)) {
