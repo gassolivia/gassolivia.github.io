@@ -71,15 +71,18 @@
 
                 <img src="img/village-in-the-valley.jpg" alt="A quaint winter village nestled in the mountain">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
-                <div id="more" style="display:none;">
-
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.
+                <a href="#" id="example-show" class="read-more"
+                onclick="showHide('example');return false;">Read more</a>
+                </p>
+                <div id="example" class="more">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum dolorem, dolor error nihil vitae similique necessitatibus omnis iure quasi vel iste repellendus alias! Asperiores voluptatem, maiores quibusdam eaque consequatur.</p>
+                	<p><a href="#" id="example-hide" class="read-less"
+                	onclick="showHide('example');return false;">Read less</a></p>
                 </div>
-
-                <a href="javascript:showMore()" id="link">Read more</a>
             </article>
+
         </main>
 
         <aside>
@@ -88,19 +91,6 @@
             <div class="sidebar-text">
                 <h2>About Me</h2>
                 <p>I've created this blog as a reminder of what we've done and where we're going. As well as to practice websites.</p>
-
-                <section>
-                    <h3 class="visuallyhidden">Social Links</h3>
-                    <a class="social-link" href="https://twitter.com/udacity">
-                        <img src="img/social-twitter.png" alt="Twitter">
-                    </a>
-                    <a class="social-link" href="https://www.instagram.com/udacity/">
-                        <img src="img/social-instagram.png" alt="Instagram">
-                    </a>
-                    <a class="social-link" href="https://plus.google.com/+Udacity">
-                        <img src="img/social-google.png" alt="Google Plus">
-                    </a>
-                </section>
             </div>
         </aside>
     </div>

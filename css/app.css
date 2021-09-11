@@ -94,7 +94,10 @@ article img {
     width: 100%;
 }
 
-.read-more {
+.more {
+	display: none; }
+
+.read-more, .read-less {
     color: #02ccba;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -116,11 +119,6 @@ aside {
     border-top: 2px solid #dbe2e8;
     margin-top: 2em;
     padding-top: 2em;
-}
-
-.social-link {
-    display: inline-block;
-    margin-right: 0.75em;
 }
 
 
