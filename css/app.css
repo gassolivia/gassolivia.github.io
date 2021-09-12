@@ -44,7 +44,6 @@ p {
     max-width: 1300px;
 }
 
-
 /*** Header Styling ***/
 .page-header {
     background-image: url('../img/headerpic.jpg');
@@ -52,7 +51,7 @@ p {
     background-size: cover;
     text-align: center;
     padding: 1em;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     min-height: 25vh;
 }
 
@@ -63,17 +62,62 @@ h1 {
     text-shadow: 0 0 5px black;
 }
 
-/*
-//circle after header
-h1::after {
-    border: 5px solid #fafbfc;
-    border-radius: 50%;
-    content: '';
-    height: 15px;
-    width: 15px;
-    position: absolute;
+/* Menu icon */
+.icon-bar {
+  width: 60px;
+  background-color: #555;
 }
-*/
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 24px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #eee; /* Grey background color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 20px;
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 /*** Article Styling ***/
 article,
@@ -142,6 +186,13 @@ footer {
 
 
 /*** Reponsive Styles ***/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 @media (min-width: 650px) {
     aside {
         display: flex;
