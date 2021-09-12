@@ -48,7 +48,7 @@ p {
 /*** Header Styling ***/
 .page-header {
     background-image: url('../img/headerimage.jpeg');
-    background-position: 50% 75%;
+    background-position: 50% 65%;
     background-size: cover;
     text-align: center;
     padding: 1em;
@@ -63,6 +63,8 @@ h1 {
     text-shadow: 0 0 1px white;
 }
 
+/*
+//circle after header
 h1::after {
     border: 5px solid #fafbfc;
     border-radius: 50%;
@@ -71,7 +73,7 @@ h1::after {
     width: 15px;
     position: absolute;
 }
-
+*/
 
 /*** Article Styling ***/
 article,
