@@ -47,8 +47,8 @@ p {
 
 /*** Header Styling ***/
 .page-header {
-    background-image: url('../img/headerimage.jpeg');
-    background-position: 50% 65%;
+    background-image: url('../img/headerpic.jpg');
+    background-position: 50% 50%;
     background-size: cover;
     text-align: center;
     padding: 1em;
@@ -60,7 +60,7 @@ h1 {
     letter-spacing: 8px;
     position: relative;
     text-transform: uppercase;
-    text-shadow: 0 0 1px white;
+    text-shadow: 0 0 5px black;
 }
 
 /*
