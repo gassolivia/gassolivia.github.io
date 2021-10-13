@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=menu -->
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <h1>Map</h1>
+    </header>
+
+    <!-- Side Navigation Menu -->
+    <div class="icon-bar">
+      <span onclick="openNav()"><a href="#"><i class="fa fa-bars"></i></a></span>
+    </div>
+
+    <!-- Side Navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="../rides/index.html">Bike Rides</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="#">.</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <main>
+          <article>
+          <header>
+            <h3>Map</h3>
+            <time datetime="2021-09-25T08:00">Updated 25 Sep 21</time>
+          </header>
+
+          <iframe src="map.html" width="100%" height="600"></iframe>
+
+          <p>The map is a work in progress. I've marked some places we've eaten that we've enjoyed, some parks and some attractions. It is built using Folium and Python.</p>
+        </article>
+      </main>
+      <aside>
+        <img src="../img/profileamsterdam.jpg" alt="My profile picture">
+
+        <div class="sidebar-text">
+          <h2>About Me</h2>
+          <p>I've created this blog as a reminder of what we've done and where we're going. As well as to practice websites.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Made with &hearts; by Olivia Gass
+    </footer>
+
+    <script src="../js/app.js"></script>
+  </body>
+
+</html>
