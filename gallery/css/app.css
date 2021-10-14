@@ -1,0 +1,311 @@
+/*** Site Colors ***
+
+pale-grey: #fafbfc
+pale-grey-two: #dbe2e8
+dark: #2e3d49
+bluegrey: #7d97ad
+aquamarine: #02ccba
+
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fafbfc;
+    color: #2e3d49;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: #fafbfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+}
+
+/*** Header Styling ***/
+.page-header {
+    background-image: url('../../img/headerpic.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0rem;
+    min-height: 25vh;
+}
+
+h1 {
+    letter-spacing: 8px;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+}
+
+/* Menu icon */
+.icon-bar {
+  width: 60px;
+  background-color: #555;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 24px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #eee; /* Grey background color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 20px;
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*** Article Styling ***/
+article,
+aside {
+    margin: 2em;
+}
+
+article header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+time {
+    color: #7d97ad;
+}
+
+article img {
+    height: auto;
+    width: 100%;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.more {
+	display: none; }
+
+.read-more, .read-less {
+    color: #02ccba;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.read-more::after {
+    content: '►';
+    position: relative;
+    left: 7px;
+    font-size: 80%;
+    top: -1px;
+}
+
+.read-less::after {
+  content: '\25B2';
+  position: relative;
+  left: 7px;
+  font-size: 80%;
+  top: -1px;
+}
+
+/*** Sidebar Styling ***/
+aside {
+    border-top: 2px solid #dbe2e8;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+
+/*** Footer Styling ***/
+footer {
+    border-top: 2px solid #dbe2e8;
+    margin-top: 4em;
+    padding: 2em;
+    text-align: center;
+}
+
+
+/*** Reponsive Styles ***/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media (min-width: 650px) {
+    aside {
+        display: flex;
+    }
+
+    .sidebar-text {
+        margin-left: 2em;
+    }
+
+    .sidebar-text h2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .page-header {
+        min-height: 35vh;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    main {
+        flex: 1 1 70%;
+    }
+
+    aside {
+        display: block;
+        border-top: 0;
+        border-left: 2px solid #dbe2e8;
+        margin: 0;
+        padding: 2em;
+        flex: 0 1 30%;
+        align-self: flex-start;
+    }
+
+    .sidebar-text {
+        margin-left: 0;
+    }
+
+    .sidebar-text h2 {
+        margin-top: 0.5em;
+    }
+}
+
+/*** Helper Classes ***/
+
+/* from the HTML5 Boilerplate project for hidden, but accessible headings: https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L126-L145 */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+/*** W3 Responsive Image Gallery ***/
+div.gallery {
+  border: 1px solid #fafbfc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.33333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {s
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
