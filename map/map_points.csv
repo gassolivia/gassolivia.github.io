@@ -1,9 +1,24 @@
-﻿Filename,Filepic,Geo,Type,,
-Brunssumerheide,1_1brunssumerheide.jpg,"50.92846582457427, 5.999300642785205",tree,,
-Schutterspark,1_2schutterspark.jpg,"50.94616095335673, 5.985057546145458",tree,,
-Trap Wilhelminaberg,1_3trapwilhelminaberg.jpg,"50.87692642030473, 6.02361718636799",tree,,
-Preuverie Auwt Gäöl,2_1preuverie.jpg,"50.924116555015495, 5.739413093252714",food,,
-WINDRAAK31,2_2placeholder.jpg,"50.97261991450792, 5.889248064289085",food,,
-Omnomnom Sittard,2_3placeholder.jpg,"50.99919272799313, 5.863809493071918",food,,
-Café aan de Müehle,3_1cafeaandemuhle.jpg,"51.03261423135201, 5.987850408513435",city,,
-De Hompesche Molen,3_2hompeschemolen.jpg,"51.12035267479848, 5.836605206619719",city,,
+﻿Filename,Filepic,Geo,Type
+Brunssumerheide,1_1brunssumerheide.jpg,"50.92846582457427, 5.999300642785205",tree
+Schutterspark,1_2schutterspark.jpg,"50.94616095335673, 5.985057546145458",tree
+Trap Wilhelminaberg,1_3trapwilhelminaberg.jpg,"50.87692642030473, 6.02361718636799",tree
+Preuverie Auwt Gäöl,2_1preuverie.jpg,"50.924116555015495, 5.739413093252714",food
+WINDRAAK31,placeholder.jpg,"50.97261991450792, 5.889248064289085",food
+Omnomnom Sittard,placeholder.jpg,"50.99919272799313, 5.863809493071918",food
+Café aan de Müehle,3_1cafeaandemuhle.jpg,"51.03261423135201, 5.987850408513435",city
+De Hompesche Molen,3_2hompeschemolen.jpg,"51.12035267479848, 5.836605206619719",city
+Maastricht,placeholder.jpg,"50.84885612873814, 5.687256615370846",trip
+Altenahr,placeholder.jpg,"50.5196769906634, 6.994712240607349",trip
+Aachen,placeholder.jpg,"50.77549840604799, 6.082912071298185",trip
+Valkenburg,placeholder.jpg,"50.86214949897251, 5.8306821246883835",trip
+Heimbach,placeholder.jpg,"50.63644096639823, 6.479836248684019",trip
+Athens,placeholder.jpg,"37.973919070754576, 23.724605794219087",trip
+Eltz Castle,placeholder.jpg,"50.205323015667375, 7.336536568957698",trip
+Cochem,placeholder.jpg,"50.14730063328619, 7.166538219925956",trip
+Amsterdam,placeholder.jpg,"52.36789629746868, 4.891163482895854",trip
+Dinant,placeholder.jpg,"50.24291304115828, 4.927075218653775",trip
+Ghent,placeholder.jpg,"51.05487643907267, 3.719884023829924",trip
+Düsseldorf,placeholder.jpg,"51.22625186530125, 6.771619643503387",trip
+Zeeland,placeholder.jpg,"51.641447589032865, 3.7122701917311893",trip
+Mullerthal Trail,placeholder.jpg,"49.827748669879504, 6.342435191360989",trip
+Paris,placeholder.jpg,"48.86222169341348, 2.337763091252834",trip
