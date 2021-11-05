@@ -181,6 +181,43 @@ article img {
   top: -1px;
 }
 
+/*** W3 Responsive Image Gallery ***/
+div.gallery {
+  border: 1px solid #fafbfc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin-top: 0;
+	padding-top: 2px;
+	text-align: center;
+	line-height: 1.7em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.33333%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*** Sidebar Styling ***/
 aside {
     border-top: 2px solid #dbe2e8;
@@ -198,14 +235,29 @@ footer {
 }
 
 
-/*** Reponsive Styles ***/
+/*** Responsive Styles ***/
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* Side Nav bar - On smaller screens, less padding and a smaller font size */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
+/* W3 Responsive Image Gallery */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* All other styling */
 @media (min-width: 650px) {
     aside {
         display: flex;
